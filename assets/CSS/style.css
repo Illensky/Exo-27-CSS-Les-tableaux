@@ -1,0 +1,45 @@
+table, tr, td {
+    border: solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 40px;
+    height: 20px;
+}
+
+#t1 {
+    caption-side: top;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+#t2 {
+    caption-side: bottom;
+    border-collapse: separate;
+    empty-cells: show;
+}
+
+#t3 {
+    caption-side: top;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+#t4 {
+    caption-side: bottom;
+    border-collapse: collapse;
+    empty-cells: hide;
+}
+
+tr:nth-child(odd) {
+    background-color: green;
+    text-transform: lowercase;
+}
+
+tr:nth-child(even) {
+    text-transform: capitalize;
+}
